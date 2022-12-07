@@ -6,6 +6,7 @@ import { concat } from "./slicesConcat.js";
 export function App() {
   const number = useSelector((state) => state.Counting.value);
   const word = useSelector((state) => state.Concating.start);
+  //const words = useSelector((state) => state); This will return an object {Counting: {…}, Concating: {…}}
   const dispatch = useDispatch();
   return (
     <div>

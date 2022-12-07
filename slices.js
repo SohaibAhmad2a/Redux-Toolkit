@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   value: 5
 };
+// createSlice will return {name : string, reducer : ReducerFunction, actions : Record<string, ActionCreator>, caseReducers: Record<string,CaseReducer>.getInitialState: () => State}
 const sliceCount = createSlice({
   name: "Counting",
   initialState,
